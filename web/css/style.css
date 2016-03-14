@@ -1,0 +1,245 @@
+/* 
+    Created on : Mar 6, 2016, 7:45:20 PM
+    Author     : Siwei Jiao
+*/
+
+/* General */
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #E4E4E4;
+    color: #292929;
+    font: normal 100% Cambria, Georgia, serif;
+    -moz-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    -webkit-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    -webkit-text-size-adjust: none;
+}
+
+p {
+    font-size: .9em;
+    text-align: left;
+    margin: 0;
+}
+
+a {
+    color: #890101;
+    text-decoration: none;
+    -moz-transition: 0.2s color linear;
+    -webkit-transition: 0.2s color linear;
+    transition: 0.2s color linear;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #DF3030;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* style navigation menu*/
+#nav {
+    text-align: center;
+    margin: 0 3%;
+    font-family: Arial, sans-serif;
+    margin-top: 1em;
+}
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+
+#nav ul li {
+    font-size: .8em;
+    padding: .5em 1em;
+    letter-spacing: .15em;
+    /*word-spacing: .8em;*/
+}
+
+#nav ul li a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+/*    font-weight: bold;*/
+    color: #890101;
+}
+
+#nav ul li a:hover {
+    color: #ff3333;
+}
+
+a.accountNav{
+    font-size: .8em;
+}
+#accountNav {
+    padding: 0 2em;
+}
+
+#accountNav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+
+.acctContainer {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    padding: 2em 0 1.5em 0;
+    background-color: #F7F7F7;
+}
+
+.acctContainer button {
+    font-size: .9em;
+    padding: .5em;
+    margin: .2em;
+    background-color: #dcdcdc;
+    border: .1em solid #666;
+    color: #000;
+    text-decoration:none;
+    border-radius: .3em;
+    background: -webkit-linear-gradient(#f9f6f6, #ccc);
+    background: linear-gradient(#f9f6f6, #ccc);
+}
+
+.acctContainer button:hover {
+    color: #5f5c5c;
+    border: .1em solid #890101;
+    background: -webkit-linear-gradient(#ccc, #f9f6f6);
+    background: linear-gradient(#ccc, #f9f6f6);
+    cursor:pointer;
+}
+
+.acctContainer button:active {
+    color: #FFF;
+    box-shadow: 0 1px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0,0,0,0.9);
+}
+
+/*style table*/
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: .8em;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+/*td {
+    color: #ccc;
+}*/
+
+/*style input*/
+input[type=text], input[type=password] {
+    font-size: .8em;
+    padding: .2em .5em; 
+    border: .1em solid #ccc; 
+    -webkit-border-radius: .5em;
+    border-radius: .5em;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    border-color: lightseagreen;
+}
+
+input[type=submit] {
+    padding: .3em 1.5em; 
+    background:#ccc; 
+    border: .1em solid #666;
+    cursor:pointer;
+    -webkit-border-radius: .5em;
+    border-radius: .5em; 
+    background: -webkit-linear-gradient(#f9f6f6, #ccc);
+    background: linear-gradient(#f9f6f6, #ccc);
+    
+}
+
+input[type=submit]:hover {
+    border: .1em solid lightseagreen;
+    background: -webkit-linear-gradient(#ccc, #f9f6f6);
+    background: linear-gradient(#ccc, #f9f6f6);
+}
+
+#chatHistoryDiv {
+    height: 200px;
+    padding: 1em;
+    overflow-y: scroll;
+    background-color: #d7f2f6;
+}
+
+/*display messages span in mainframe*/
+span.msgFromSpan {
+    color: lightseagreen;          
+} 
+
+span.meSpan {
+    color: lightskyblue;
+}
+
+@media all and (min-width: 781px) {
+            #nav ul li {
+                display: inline-block;
+            }
+            
+            #accountNav ul li {
+                display: inline-block;
+            }
+            
+            #loginForm select {
+                margin-left: 1em;               
+            }
+            
+            input[type=submit] {
+                width: 22em;         
+            } 
+            
+            #loginForm {
+                text-align:center;
+            }
+}        
+
+@media all and (max-width: 780px){
+          
+            #loginForm select {
+                margin-left: 0em;
+                
+            }
+            
+            input[type=submit] {
+                width: 14.2em;         
+            } 
+           
+            
+        }   
+        
+        
+        
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */

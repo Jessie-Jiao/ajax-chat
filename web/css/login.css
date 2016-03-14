@@ -1,0 +1,36 @@
+/* 
+    Created on : Mar 7, 2016, 5:30:53 PM
+    Author     : Siwei Jiao
+*/
+
+#loginDiv {
+    font-family: Arial, sans-serif;
+    width: 75%;
+    margin: 0 auto;    
+    margin-top: 2em;
+    background-color: #F7F7F7;
+    padding: 2em 1em;
+}
+#loginForm {
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+#loginDiv h2 {
+    text-align: center;
+    color: lightseagreen;
+/*    background-color: #DF3030*/
+}
+
+.inputItem {
+    margin: 1em 0;
+}
+
+#loginForm select {
+    font-size: .8em;
+    width: 12em;
+    padding: .2em .5em; 
+    border: .1em solid #ccc;     
+    border-radius: .5em;
+            }
